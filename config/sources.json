@@ -3,62 +3,6 @@
   "version": "1.0",
   "description": "科技前沿资讯自动发布系统",
   "sources": {
-    "techcrunch": {
-      "name": "TechCrunch",
-      "type": "rss",
-      "url": "https://techcrunch.com/feed/",
-      "enabled": true,
-      "priority": 1
-    },
-    "hackernews": {
-      "name": "Hacker News",
-      "type": "rss",
-      "url": "https://hnrss.org/frontpage",
-      "enabled": true,
-      "priority": 2
-    },
-    "theverge": {
-      "name": "The Verge",
-      "type": "rss",
-      "url": "https://www.theverge.com/rss/index.xml",
-      "enabled": true,
-      "priority": 3
-    },
-    "36kr": {
-      "name": "36氪",
-      "type": "rss",
-      "url": "https://36kr.com/feed",
-      "enabled": true,
-      "priority": 4
-    },
-    "infoq": {
-      "name": "InfoQ",
-      "type": "rss",
-      "url": "https://feed.infoq.com/",
-      "enabled": false,
-      "priority": 5
-    },
-    "aitrends": {
-      "name": "AI Trends",
-      "type": "rss",
-      "url": "https://aitrends.com/feed/",
-      "enabled": true,
-      "priority": 6
-    },
-    "openai_blog": {
-      "name": "OpenAI Blog",
-      "type": "rss",
-      "url": "https://openai.com/blog/rss.xml",
-      "enabled": true,
-      "priority": 7
-    },
-    "anthropic_ai": {
-      "name": "Anthropic",
-      "type": "rss",
-      "url": "https://www.anthropic.com/feed",
-      "enabled": true,
-      "priority": 8
-    },
     "hackernoon": {
       "name": "HackerNoon",
       "type": "rss",
@@ -71,21 +15,14 @@
       "type": "rss",
       "url": "https://www.wired.com/feed/rss",
       "enabled": true,
-      "priority": 9
+      "priority": 2
     },
     "mit_tech": {
       "name": "MIT Tech",
       "type": "rss",
       "url": "https://www.technologyreview.com/feed/",
       "enabled": true,
-      "priority": 10
-    },
-    "venturebeat": {
-      "name": "VentureBeat",
-      "type": "rss",
-      "url": "https://venturebeat.com/feed/",
-      "enabled": true,
-      "priority": 11
+      "priority": 3
     }
   },
   "filters": {
