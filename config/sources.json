@@ -58,6 +58,13 @@
       "url": "https://www.anthropic.com/feed",
       "enabled": true,
       "priority": 8
+    },
+    "hackernoon": {
+      "name": "HackerNoon",
+      "type": "rss",
+      "url": "https://hackernoon.com/feed",
+      "enabled": true,
+      "priority": 1
     }
   },
   "filters": {
