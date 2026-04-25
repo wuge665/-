@@ -65,6 +65,27 @@
       "url": "https://hackernoon.com/feed",
       "enabled": true,
       "priority": 1
+    },
+    "wired": {
+      "name": "Wired",
+      "type": "rss",
+      "url": "https://www.wired.com/feed/rss",
+      "enabled": true,
+      "priority": 9
+    },
+    "mit_tech": {
+      "name": "MIT Tech",
+      "type": "rss",
+      "url": "https://www.technologyreview.com/feed/",
+      "enabled": true,
+      "priority": 10
+    },
+    "venturebeat": {
+      "name": "VentureBeat",
+      "type": "rss",
+      "url": "https://venturebeat.com/feed/",
+      "enabled": true,
+      "priority": 11
     }
   },
   "filters": {
@@ -91,7 +112,7 @@
     ],
     "min_title_length": 15,
     "max_title_length": 80,
-    "max_articles_per_source": 20,
+    "max_articles_per_source": 10,
     "output_count": 5
   },
   "style": {
