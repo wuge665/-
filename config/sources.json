@@ -1,0 +1,99 @@
+{
+  "name": "科技简报",
+  "version": "1.0",
+  "description": "科技前沿资讯自动发布系统",
+  "sources": {
+    "techcrunch": {
+      "name": "TechCrunch",
+      "type": "rss",
+      "url": "https://techcrunch.com/feed/",
+      "enabled": true,
+      "priority": 1
+    },
+    "hackernews": {
+      "name": "Hacker News",
+      "type": "rss",
+      "url": "https://hnrss.org/frontpage",
+      "enabled": true,
+      "priority": 2
+    },
+    "theverge": {
+      "name": "The Verge",
+      "type": "rss",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "enabled": true,
+      "priority": 3
+    },
+    "36kr": {
+      "name": "36氪",
+      "type": "rss",
+      "url": "https://36kr.com/feed",
+      "enabled": true,
+      "priority": 4
+    },
+    "infoq": {
+      "name": "InfoQ",
+      "type": "rss",
+      "url": "https://feed.infoq.com/",
+      "enabled": false,
+      "priority": 5
+    },
+    "aitrends": {
+      "name": "AI Trends",
+      "type": "rss",
+      "url": "https://aitrends.com/feed/",
+      "enabled": true,
+      "priority": 6
+    },
+    "openai_blog": {
+      "name": "OpenAI Blog",
+      "type": "rss",
+      "url": "https://openai.com/blog/rss.xml",
+      "enabled": true,
+      "priority": 7
+    },
+    "anthropic_ai": {
+      "name": "Anthropic",
+      "type": "rss",
+      "url": "https://www.anthropic.com/feed",
+      "enabled": true,
+      "priority": 8
+    }
+  },
+  "filters": {
+    "exclude_domains": [
+      "mp.weixin.qq.com",
+      "weixin.qq.com",
+      "weixindubai.com"
+    ],
+    "exclude_keywords": [
+      "广告",
+      "招聘",
+      "优惠券",
+      "促销",
+      "限时",
+      "免费领取"
+    ],
+    "high_weight_keywords": [
+      "大模型", "LLM", "GPT", "AI", "AGI", "模型",
+      "ChatGPT", "Gemini", "Claude", "Sora", "Grok",
+      "自动驾驶", "机器人", "量子计算", "AI Agent",
+      "OpenAI", "Google", "Anthropic", "Meta", "xAI",
+      "DeepSeek", "Kimi", "Llama", "Qwen", "Mistral",
+      "o1", "推理", "多模态", "AI编程", "Cursor", "Claude Code"
+    ],
+    "min_title_length": 15,
+    "max_title_length": 80,
+    "max_articles_per_source": 20,
+    "output_count": 5
+  },
+  "style": {
+    "persona": "科技媒体编辑",
+    "tone": "自然、活泼、有特色",
+    "max_content_length": 0
+  },
+  "publish": {
+    "post_as_draft": true,
+    "notify_on_complete": false
+  }
+}

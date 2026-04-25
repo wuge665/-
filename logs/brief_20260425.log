@@ -1,0 +1,602 @@
+2026-04-25 00:00:37.748 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 00:00:37.749 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 00:00:37.749 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 00:00:37
+2026-04-25 00:00:37.749 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 00:00:37.749 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 00:00:37.749 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 00:00:37.954 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 00:00:37.954 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 00:01:11.028 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 0 篇文章
+2026-04-25 00:01:11.028 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 00:01:11.843 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 00:01:11.843 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 00:01:12.343 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 00:01:12.343 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 00:01:12.739 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 00:01:12.739 | INFO     | __main__:main:67 -    抓取到 50 篇原始文章
+2026-04-25 00:01:12.739 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 00:01:12.739 | INFO     | src.filter:process:37 -    原始文章: 50 篇
+2026-04-25 00:01:12.739 | INFO     | src.filter:process:41 -    去重后: 50 篇
+2026-04-25 00:01:12.740 | INFO     | src.filter:process:45 -    过滤低质量后: 45 篇
+2026-04-25 00:01:12.740 | INFO     | __main__:main:77 -    保留 45 篇优质内容
+2026-04-25 00:01:12.740 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 00:01:12.740 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5, bring...
+2026-04-25 00:01:27.593 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Meta与亚马逊达成数十亿美元合作，采用其CPU芯片支撑人工...
+2026-04-25 00:01:44.524 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: 博裕、经纬、顺为等投资前新石器COO超亿元，押注AI超便携电...
+2026-04-25 00:01:58.008 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: 融了2000万美金，这家2000万美金ARR的AI公司，推出...
+2026-04-25 00:02:17.033 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 最前线｜AI收入破亿后的路径选择：微盟推行AI First战...
+2026-04-25 00:02:35.073 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 00:02:35.073 | INFO     | __main__:main:124 - 📤 步骤4: 发布到微信公众号...
+2026-04-25 00:02:35.073 | INFO     | __main__:main:128 -    发布第 1/5 篇: 🤖 GPT-5.5上线，OpenAI又离“超级应用”更近一步！🎉
+
+##
+2026-04-25 00:02:38.083 | INFO     | src.publisher:_publish_draft:124 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbmkSWuT6KTOjG5bO70Tmn1wLmkUH4D3egR_DnRRm-Psc
+2026-04-25 00:02:38.084 | INFO     | __main__:main:132 -    ✅ 成功 🤖 GPT-5.5上线，OpenAI又离“超级应用”更近一步！🎉
+
+##
+2026-04-25 00:02:38.084 | INFO     | __main__:main:128 -    发布第 2/5 篇: Meta大动作！牵手亚马逊，AI芯片合作价值数十亿，这波操作厉害了！
+
+##
+2026-04-25 00:02:41.058 | INFO     | src.publisher:_publish_draft:124 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbkPtQUakank3j9sWYadIModUfN1d-AViE0He0ooC0bXD
+2026-04-25 00:02:41.059 | INFO     | __main__:main:132 -    ✅ 成功 Meta大动作！牵手亚马逊，AI芯片合作价值数十亿，这波操作厉害了！
+
+##
+2026-04-25 00:02:41.059 | INFO     | __main__:main:128 -    发布第 3/5 篇: 阅星曈融资超亿元，AI超便携电子纸要抢夺手机背面空间？
+2026-04-25 00:02:43.931 | INFO     | src.publisher:_publish_draft:124 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbkip22noJK-3uCm9zvrBDRuIKkdSIHN-Taq2ynediUsS
+2026-04-25 00:02:43.932 | INFO     | __main__:main:132 -    ✅ 成功 阅星曈融资超亿元，AI超便携电子纸要抢夺手机背面空间？
+2026-04-25 00:02:43.933 | INFO     | __main__:main:128 -    发布第 4/5 篇: 🚀 2000万美金融进AI口袋，这家公司推出“视频版Photoshop”「Buzzy」🎬
+2026-04-25 00:02:47.118 | INFO     | src.publisher:_publish_draft:124 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbjNJ_H6tfcDo-0QYhnZ6l8_qT7cjIdsN6xFJQ-r8QxR3
+2026-04-25 00:02:47.119 | INFO     | __main__:main:132 -    ✅ 成功 🚀 2000万美金融进AI口袋，这家公司推出“视频版Photoshop”「Buzzy」🎬
+2026-04-25 00:02:47.119 | INFO     | __main__:main:128 -    发布第 5/5 篇: 最前线｜AI收入破亿后，微盟玩起“AI First”战略，B端交付能玩转吗？
+
+##
+2026-04-25 00:02:49.944 | INFO     | src.publisher:_publish_draft:124 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGblGJkcxiEx6bNKzQBRNSCsDdFZqwigflgR-BQt6o7LQh
+2026-04-25 00:02:49.945 | INFO     | __main__:main:132 -    ✅ 成功 最前线｜AI收入破亿后，微盟玩起“AI First”战略，B端交付能玩转吗？
+
+##
+2026-04-25 00:02:49.945 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 00:02:49.945 | INFO     | __main__:main:137 - ✨ 任务完成！请登录公众号后台审核草稿
+2026-04-25 00:02:49.945 | INFO     | __main__:main:138 - ==================================================
+2026-04-25 00:08:05.397 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 00:08:05.398 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 00:08:05.398 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 00:08:05
+2026-04-25 00:08:05.398 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 00:08:05.398 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 00:08:05.398 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 00:08:05.608 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 00:08:05.608 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 00:08:08.689 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 00:08:08.689 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 00:08:09.139 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 00:08:09.139 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 00:08:09.642 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 00:08:09.642 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 00:08:10.053 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 00:08:10.053 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 00:08:10.053 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 00:08:10.053 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 00:08:10.054 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 00:08:10.054 | INFO     | src.filter:process:45 -    过滤低质量后: 64 篇
+2026-04-25 00:08:10.054 | INFO     | __main__:main:77 -    保留 64 篇优质内容
+2026-04-25 00:08:10.054 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 00:08:10.055 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5, bring...
+2026-04-25 00:08:22.760 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Meta与亚马逊达成数十亿美元合作，采用其CPU芯片支撑人工...
+2026-04-25 00:08:44.834 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: 博裕、经纬、顺为等投资前新石器COO超亿元，押注AI超便携电...
+2026-04-25 00:09:04.216 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: 融了2000万美金，这家2000万美金ARR的AI公司，推出...
+2026-04-25 00:09:18.702 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 最前线｜AI收入破亿后的路径选择：微盟推行AI First战...
+2026-04-25 00:09:36.264 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 00:09:36.264 | INFO     | __main__:main:124 - 📤 步骤4: 发布到微信公众号...
+2026-04-25 00:09:36.264 | INFO     | __main__:main:128 -    发布第 1/5 篇: OpenAI放出新武器GPT-5.5，离“超级应用”又近一步？
+2026-04-25 00:09:39.609 | INFO     | src.publisher:_publish_draft:127 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbrA-tS3IaH89YysCUunFNkWi5u-U5qNcAT6wAwWUw3WA
+2026-04-25 00:09:39.610 | INFO     | __main__:main:132 -    ✅ 成功 OpenAI放出新武器GPT-5.5，离“超级应用”又近一步？
+2026-04-25 00:09:39.610 | INFO     | __main__:main:128 -    发布第 2/5 篇: Meta豪掷数十亿，牵手亚马逊AI芯片，这波合作靠谱吗？
+2026-04-25 00:09:42.552 | INFO     | src.publisher:_publish_draft:127 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbiDioMVmC9M35JwM9JzU5kBE3lyDUXn8lWTOHGbA5mB2
+2026-04-25 00:09:42.553 | INFO     | __main__:main:132 -    ✅ 成功 Meta豪掷数十亿，牵手亚马逊AI芯片，这波合作靠谱吗？
+2026-04-25 00:09:42.553 | INFO     | __main__:main:128 -    发布第 3/5 篇: 🚀博裕、经纬、顺为联手投资！新石器COO超亿元押注AI超便携电子纸，这波操作牛！📚
+
+##
+2026-04-25 00:09:45.797 | INFO     | src.publisher:_publish_draft:127 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbpgHotzOQ7q7RboHQ5Zl1RpfjnfBbXo0lmz49OdRmD5M
+2026-04-25 00:09:45.798 | INFO     | __main__:main:132 -    ✅ 成功 🚀博裕、经纬、顺为联手投资！新石器COO超亿元押注AI超便携电子纸，这波操作牛！📚
+
+##
+2026-04-25 00:09:45.799 | INFO     | __main__:main:128 -    发布第 4/5 篇: 融了2000万美金，这家2000万美金ARR的AI公司，竟然推出“视频版Photoshop”「Buzzy」？🔥
+2026-04-25 00:09:48.597 | INFO     | src.publisher:_publish_draft:127 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbl--86vsJBhJ5MmOh0OglMFg_yh3X1QdjtbD1FTB-43U
+2026-04-25 00:09:48.599 | INFO     | __main__:main:132 -    ✅ 成功 融了2000万美金，这家2000万美金ARR的AI公司，竟然推出“视频版Photoshop”「Buzzy」？🔥
+2026-04-25 00:09:48.599 | INFO     | __main__:main:128 -    发布第 5/5 篇: 🚀 AI收入破亿后，微盟“AI First”战略：B端交付的挑战与机遇
+
+##
+2026-04-25 00:09:51.618 | INFO     | src.publisher:_publish_draft:127 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbseJciIVAVqXIsa2ZUFUUMoAM-5vecZEQHw0D-UJp3Nh
+2026-04-25 00:09:51.619 | INFO     | __main__:main:132 -    ✅ 成功 🚀 AI收入破亿后，微盟“AI First”战略：B端交付的挑战与机遇
+
+##
+2026-04-25 00:09:51.619 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 00:09:51.619 | INFO     | __main__:main:137 - ✨ 任务完成！请登录公众号后台审核草稿
+2026-04-25 00:09:51.619 | INFO     | __main__:main:138 - ==================================================
+2026-04-25 00:13:25.097 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 00:13:25.097 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 00:13:25.097 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 00:13:25
+2026-04-25 00:13:25.097 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 00:13:25.098 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 00:13:25.098 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 00:13:25.284 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 00:13:25.284 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 00:13:28.055 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 00:13:28.055 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 00:13:28.635 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 00:13:28.635 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 00:13:29.119 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 00:13:29.119 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 00:13:29.599 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 00:13:29.599 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 00:13:29.599 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 00:13:29.599 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 00:13:29.600 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 00:13:29.600 | INFO     | src.filter:process:45 -    过滤低质量后: 64 篇
+2026-04-25 00:13:29.600 | INFO     | __main__:main:77 -    保留 64 篇优质内容
+2026-04-25 00:13:29.600 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 00:13:29.600 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5, bring...
+2026-04-25 00:13:45.755 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Meta与亚马逊达成数十亿美元合作，采用其CPU芯片支撑人工...
+2026-04-25 00:14:00.093 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: 博裕、经纬、顺为等投资前新石器COO超亿元，押注AI超便携电...
+2026-04-25 00:14:12.325 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: 融了2000万美金，这家2000万美金ARR的AI公司，推出...
+2026-04-25 00:14:21.972 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 最前线｜AI收入破亿后的路径选择：微盟推行AI First战...
+2026-04-25 00:14:42.381 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 00:14:42.381 | INFO     | __main__:main:124 - 📤 步骤4: 发布到微信公众号...
+2026-04-25 00:14:42.381 | INFO     | __main__:main:128 -    发布第 1/5 篇: GPT-5.5来了！OpenAI迈向“超级应用”又近一步😱
+2026-04-25 00:14:45.667 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbsgFkB47mKV0iGGX6GlI6QzqQEavBAH1pImcASSEy-4W
+2026-04-25 00:14:45.668 | INFO     | __main__:main:132 -    ✅ 成功 GPT-5.5来了！OpenAI迈向“超级应用”又近一步😱
+2026-04-25 00:14:45.668 | INFO     | __main__:main:128 -    发布第 2/5 篇: Meta与亚马逊达成数十亿美元合作，采用其CPU芯片支撑人工智能业务
+2026-04-25 00:14:48.674 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbuy_9ILn8rIk3X5xRdUFW9OeEXMJ82HyvsBw9CwE_zZ4
+2026-04-25 00:14:48.675 | INFO     | __main__:main:132 -    ✅ 成功 Meta与亚马逊达成数十亿美元合作，采用其CPU芯片支撑人工智能业务
+2026-04-25 00:14:48.675 | INFO     | __main__:main:128 -    发布第 3/5 篇: 阅星曈融资超亿元，AI电子纸新赛道，手机背面空间如何被重新定义？
+2026-04-25 00:14:51.738 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbp7_FMQa3gz2vc8vCk6-wFDbsElcS6PXxWRELG-qOLeO
+2026-04-25 00:14:51.740 | INFO     | __main__:main:132 -    ✅ 成功 阅星曈融资超亿元，AI电子纸新赛道，手机背面空间如何被重新定义？
+2026-04-25 00:14:51.740 | INFO     | __main__:main:128 -    发布第 4/5 篇: 融2000万！AI公司“感知阶跃”推“视频版Photoshop”，这波操作牛了！🔥
+
+##
+2026-04-25 00:14:54.642 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbgp5b3wp2xDV0yf5sdQJ0DlWz8xq59SNApt2hLoJF--I
+2026-04-25 00:14:54.644 | INFO     | __main__:main:132 -    ✅ 成功 融2000万！AI公司“感知阶跃”推“视频版Photoshop”，这波操作牛了！🔥
+
+##
+2026-04-25 00:14:54.644 | INFO     | __main__:main:128 -    发布第 5/5 篇: 最前线｜AI收入破亿后，微盟“AI First”战略：B端交付的挑战与机遇
+2026-04-25 00:14:57.839 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbq4oD3YRBEG9H7sPpebXiZ9fxonnosB4qCV2z279n8FN
+2026-04-25 00:14:57.840 | INFO     | __main__:main:132 -    ✅ 成功 最前线｜AI收入破亿后，微盟“AI First”战略：B端交付的挑战与机遇
+2026-04-25 00:14:57.840 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 00:14:57.840 | INFO     | __main__:main:137 - ✨ 任务完成！请登录公众号后台审核草稿
+2026-04-25 00:14:57.840 | INFO     | __main__:main:138 - ==================================================
+2026-04-25 09:56:02.187 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 09:56:02.188 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 09:56:02.188 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 09:56:02
+2026-04-25 09:56:02.189 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 09:56:02.189 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 09:56:02.189 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 09:56:02.408 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 09:56:02.408 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 09:56:10.581 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 09:56:10.581 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 09:56:11.067 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 09:56:11.067 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 09:56:11.568 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 09:56:11.568 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 09:56:12.122 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 09:56:12.122 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 09:56:12.122 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 09:56:12.123 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 09:56:12.125 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 09:56:12.125 | INFO     | src.filter:process:45 -    过滤低质量后: 60 篇
+2026-04-25 09:56:12.125 | INFO     | __main__:main:77 -    保留 60 篇优质内容
+2026-04-25 09:56:12.125 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 09:56:12.126 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 09:56:38.341 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 09:56:58.805 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 09:57:13.624 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: Meta’s loss is Thinking Machin...
+2026-04-25 09:57:32.798 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: Meta与亚马逊达成数十亿美元合作，采用其CPU芯片支撑人工...
+2026-04-25 09:57:53.755 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 09:57:53.755 | INFO     | __main__:main:124 - 📤 步骤4: 发布到微信公众号...
+2026-04-25 09:57:53.755 | INFO     | __main__:main:128 -    发布第 1/5 篇: OpenAI放大招！GPT-5.5和GPT-5.5 Pro上线API，这波操作稳了！
+2026-04-25 09:57:57.943 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbpgkkUXQd-NtW-0tybLmd3vhb75CHBgPavAQ5z_5xgA4
+2026-04-25 09:57:57.944 | INFO     | __main__:main:132 -    ✅ 成功 OpenAI放大招！GPT-5.5和GPT-5.5 Pro上线API，这波操作稳了！
+2026-04-25 09:57:57.944 | INFO     | __main__:main:128 -    发布第 2/5 篇: 谷歌砸40亿美元重注Anthropic，AI巨头争夺算力，这场竞赛你猜谁会赢？
+
+##
+2026-04-25 09:58:01.154 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbuwmrkaGUpI7BeUsV4_kN3hnViU4Zj0DEHK6GL9b7bcH
+2026-04-25 09:58:01.155 | INFO     | __main__:main:132 -    ✅ 成功 谷歌砸40亿美元重注Anthropic，AI巨头争夺算力，这场竞赛你猜谁会赢？
+
+##
+2026-04-25 09:58:01.155 | INFO     | __main__:main:128 -    发布第 3/5 篇: 谷歌豪掷400亿， Anthropic的未来会怎样？
+
+##
+2026-04-25 09:58:04.239 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbrE1FL2yiYxtMqE8nNUwq0ZKdF1bHA1SnTuea7v8PSCd
+2026-04-25 09:58:04.240 | INFO     | __main__:main:132 -    ✅ 成功 谷歌豪掷400亿， Anthropic的未来会怎样？
+
+##
+2026-04-25 09:58:04.240 | INFO     | __main__:main:128 -    发布第 4/5 篇: Meta挖墙脚，Thinking Machines反杀？这场人才争夺战太刺激了！
+
+##
+2026-04-25 09:58:07.895 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGbk1xUKjZZSg28s0FEPtEk_KKNhb4o_FMU5NXvpSxB21-
+2026-04-25 09:58:07.897 | INFO     | __main__:main:132 -    ✅ 成功 Meta挖墙脚，Thinking Machines反杀？这场人才争夺战太刺激了！
+
+##
+2026-04-25 09:58:07.897 | INFO     | __main__:main:128 -    发布第 5/5 篇: Meta与亚马逊牵手，AI芯片合作价值数十亿！这波操作，AI圈炸了！
+
+##
+2026-04-25 09:58:11.192 | INFO     | src.publisher:_publish_draft:138 -    ✅ 草稿发布成功, media_id: 1cnkzSTbIFHKa__gifYGblpq_r9CmLv_dg_aJA_zy303A80_5EC4GPotMRi1qjFz
+2026-04-25 09:58:11.193 | INFO     | __main__:main:132 -    ✅ 成功 Meta与亚马逊牵手，AI芯片合作价值数十亿！这波操作，AI圈炸了！
+
+##
+2026-04-25 09:58:11.193 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 09:58:11.193 | INFO     | __main__:main:137 - ✨ 任务完成！请登录公众号后台审核草稿
+2026-04-25 09:58:11.193 | INFO     | __main__:main:138 - ==================================================
+2026-04-25 10:00:18.510 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:00:18.510 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:00:18.510 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:00:18
+2026-04-25 10:00:18.511 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:00:18.511 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:00:18.511 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:00:18.773 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:00:18.773 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:00:19.908 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:00:19.908 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:00:20.489 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:00:20.489 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:00:22.537 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:00:22.537 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:00:22.944 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:00:22.945 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:00:22.945 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:00:22.945 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:00:22.945 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:00:22.945 | INFO     | src.filter:process:45 -    过滤低质量后: 60 篇
+2026-04-25 10:00:22.946 | INFO     | __main__:main:77 -    保留 60 篇优质内容
+2026-04-25 10:00:22.946 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:00:22.946 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 10:00:38.182 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 10:00:58.720 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 10:01:21.527 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: Meta’s loss is Thinking Machin...
+2026-04-25 10:01:36.920 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: Meta与亚马逊达成数十亿美元合作，采用其CPU芯片支撑人工...
+2026-04-25 10:01:54.380 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 10:01:54.380 | INFO     | __main__:main:124 - 📤 步骤4: 发布到微信公众号...
+2026-04-25 10:01:54.380 | INFO     | __main__:main:128 -    发布第 1/5 篇: 🔥 OpenAI放大招！GPT-5.5和GPT-5.5 Pro API上线，这波操作太震撼了！
+
+##
+2026-04-25 10:01:56.169 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [051638-0] rid: 69ec2093-6e541f72-5afeb2ef'}
+2026-04-25 10:01:56.171 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [051638-0] rid: 69ec2093-6e541f72-5afeb2ef
+2026-04-25 10:01:56.171 | INFO     | __main__:main:128 -    发布第 2/5 篇: 🔥 Google豪掷40亿！AI巨头 Anthropic 获巨资加码，这场“军备竞赛”谁能笑到最后？
+
+##
+2026-04-25 10:01:57.950 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [QW72ga051773-1] rid: 69ec2095-07b98dab-5c6341e7'}
+2026-04-25 10:01:57.952 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [QW72ga051773-1] rid: 69ec2095-07b98dab-5c6341e7
+2026-04-25 10:01:57.952 | INFO     | __main__:main:128 -    发布第 3/5 篇: 谷歌砸40亿！Anthropic这波操作，AI圈沸腾了！
+
+##
+2026-04-25 10:01:59.772 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [GbGkJa051978-0] rid: 69ec2097-3e2ccef3-1b102690'}
+2026-04-25 10:01:59.774 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [GbGkJa051978-0] rid: 69ec2097-3e2ccef3-1b102690
+2026-04-25 10:01:59.774 | INFO     | __main__:main:128 -    发布第 4/5 篇: Meta失意，Thinking Machines却笑纳人才，这波操作太精彩！
+
+##
+2026-04-25 10:02:01.520 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [MnraDa052125-0] rid: 69ec2099-469427b1-4a78a154'}
+2026-04-25 10:02:01.522 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [MnraDa052125-0] rid: 69ec2099-469427b1-4a78a154
+2026-04-25 10:02:01.522 | INFO     | __main__:main:128 -    发布第 5/5 篇: Meta大手笔！与亚马逊合作数十亿，AI芯片哪家强？
+
+##
+2026-04-25 10:02:03.302 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [D29tUA052325-0] rid: 69ec209b-4eb76dc2-34240c3e'}
+2026-04-25 10:02:03.305 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [D29tUA052325-0] rid: 69ec209b-4eb76dc2-34240c3e
+2026-04-25 10:02:03.305 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 10:02:03.305 | INFO     | __main__:main:137 - ✨ 任务完成！请登录公众号后台审核草稿
+2026-04-25 10:02:03.305 | INFO     | __main__:main:138 - ==================================================
+2026-04-25 10:07:04.157 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:07:04.158 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:07:04.158 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:07:04
+2026-04-25 10:07:04.158 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:07:04.158 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:07:04.158 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:07:04.348 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:07:04.348 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:07:05.448 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:07:05.448 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:07:05.971 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:07:05.972 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:07:06.406 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:07:06.407 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:07:07.166 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:07:07.166 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:07:07.166 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:07:07.167 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:07:07.167 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:07:07.167 | INFO     | src.filter:process:45 -    过滤低质量后: 59 篇
+2026-04-25 10:07:07.167 | INFO     | __main__:main:77 -    保留 59 篇优质内容
+2026-04-25 10:07:07.167 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:07:07.168 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 10:07:35.068 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 10:07:51.679 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 10:09:11.897 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:09:11.898 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:09:11.898 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:09:11
+2026-04-25 10:09:11.898 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:09:11.898 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:09:11.898 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:09:12.167 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:09:12.167 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:09:13.267 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:09:13.267 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:09:14.217 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:09:14.217 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:09:14.719 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:09:14.719 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:09:15.120 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:09:15.120 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:09:15.120 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:09:15.120 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:09:15.121 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:09:15.121 | INFO     | src.filter:process:45 -    过滤低质量后: 59 篇
+2026-04-25 10:09:15.121 | INFO     | __main__:main:77 -    保留 59 篇优质内容
+2026-04-25 10:09:15.121 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:09:15.122 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 10:09:35.815 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 10:09:53.179 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 10:10:21.673 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: Meta’s loss is Thinking Machin...
+2026-04-25 10:10:42.683 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 谷歌计划向Anthropic投资至多400亿美元，支持后者大...
+2026-04-25 10:11:03.119 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 10:11:03.119 | INFO     | __main__:main:124 - 📤 步骤4: 发布到微信公众号...
+2026-04-25 10:11:03.119 | INFO     | __main__:main:128 -    发布第 1/5 篇: 🚀 OpenAI放大招！GPT-5.5和GPT-5.5 Pro来了，这波升级太炸裂！
+2026-04-25 10:11:05.109 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [UKN.iA006547-2] rid: 69ec22b8-0716b9e0-7f56264e'}
+2026-04-25 10:11:05.111 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [UKN.iA006547-2] rid: 69ec22b8-0716b9e0-7f56264e
+2026-04-25 10:11:05.111 | INFO     | __main__:main:128 -    发布第 2/5 篇: 🚀Google豪掷400亿美元！AI领域的大动作，你怎么看？
+2026-04-25 10:11:06.850 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [VpdiuA006647-3] rid: 69ec22ba-579bf5c4-0cda5203'}
+2026-04-25 10:11:06.852 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [VpdiuA006647-3] rid: 69ec22ba-579bf5c4-0cda5203
+2026-04-25 10:11:06.852 | INFO     | __main__:main:128 -    发布第 3/5 篇: 谷歌豪掷40亿美元投资，AI初创公司Anthropic是何方神圣？😅
+2026-04-25 10:11:08.579 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [bwI4006821-0] rid: 69ec22bc-0c3a01e0-36388d2a'}
+2026-04-25 10:11:08.581 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [bwI4006821-0] rid: 69ec22bc-0c3a01e0-36388d2a
+2026-04-25 10:11:08.581 | INFO     | __main__:main:128 -    发布第 4/5 篇: Meta的人才流失，却是Thinking Machines的福音？
+
+##
+2026-04-25 10:11:10.461 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [.HChca007041-3] rid: 69ec22be-30db046c-7df04cad'}
+2026-04-25 10:11:10.463 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [.HChca007041-3] rid: 69ec22be-30db046c-7df04cad
+2026-04-25 10:11:10.463 | INFO     | __main__:main:128 -    发布第 5/5 篇: 谷歌豪掷400亿！Anthropic要“上天”了？
+
+##
+2026-04-25 10:11:12.221 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [mtxtfa007256-3] rid: 69ec22bf-3c1b0072-74745ece'}
+2026-04-25 10:11:12.223 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [mtxtfa007256-3] rid: 69ec22bf-3c1b0072-74745ece
+2026-04-25 10:11:12.223 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 10:11:12.223 | INFO     | __main__:main:137 - ✨ 任务完成！请登录公众号后台审核草稿
+2026-04-25 10:11:12.223 | INFO     | __main__:main:138 - ==================================================
+2026-04-25 10:12:20.098 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:12:20.098 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:12:20.099 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:12:20
+2026-04-25 10:12:20.099 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:12:20.099 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:12:20.099 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:12:20.293 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:12:20.293 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:12:21.376 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:12:21.376 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:12:22.928 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:12:22.928 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:12:23.391 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:12:23.391 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:12:23.841 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:12:23.842 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:12:23.842 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:12:23.842 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:12:23.842 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:12:23.842 | INFO     | src.filter:process:45 -    过滤低质量后: 59 篇
+2026-04-25 10:12:23.843 | INFO     | __main__:main:77 -    保留 59 篇优质内容
+2026-04-25 10:12:23.843 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:12:23.843 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 10:12:44.330 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 10:13:12.718 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 10:13:32.272 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: Meta’s loss is Thinking Machin...
+2026-04-25 10:13:57.728 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 谷歌计划向Anthropic投资至多400亿美元，支持后者大...
+2026-04-25 10:14:21.182 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 10:14:21.182 | INFO     | __main__:main:124 - 📤 步骤4: 发布到微信公众号...
+2026-04-25 10:14:21.182 | INFO     | __main__:main:128 -    发布第 1/5 篇: 🔥OpenAI放大招！GPT-5.5 Pro强势来袭，API新版本带你飞！🚀
+
+##
+2026-04-25 10:14:23.016 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [Bqz5ga026278-0] rid: 69ec237e-56459d61-774c0282'}
+2026-04-25 10:14:23.018 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [Bqz5ga026278-0] rid: 69ec237e-56459d61-774c0282
+2026-04-25 10:14:23.018 | INFO     | __main__:main:128 -    发布第 2/5 篇: Google豪掷40亿美元投资Anthropic，AI竞赛中谁将笑到最后？🤔
+
+##
+2026-04-25 10:14:24.835 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [TRR54a026413-0] rid: 69ec2380-6fbd7855-7a34161e'}
+2026-04-25 10:14:24.837 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [TRR54a026413-0] rid: 69ec2380-6fbd7855-7a34161e
+2026-04-25 10:14:24.838 | INFO     | __main__:main:128 -    发布第 3/5 篇: 谷歌豪掷400亿，押宝Anthropic，AI行业要变天？
+2026-04-25 10:14:26.580 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [7cK5rA026678-3] rid: 69ec2382-5709720c-524694b0'}
+2026-04-25 10:14:26.582 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [7cK5rA026678-3] rid: 69ec2382-5709720c-524694b0
+2026-04-25 10:14:26.582 | INFO     | __main__:main:128 -    发布第 4/5 篇: Meta的人才流失，成了Thinking Machines的福音？
+
+##
+2026-04-25 10:14:28.344 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [R5Q91a026858-0] rid: 69ec2384-49ec641d-736ef4be'}
+2026-04-25 10:14:28.346 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [R5Q91a026858-0] rid: 69ec2384-49ec641d-736ef4be
+2026-04-25 10:14:28.346 | INFO     | __main__:main:128 -    发布第 5/5 篇: 谷歌计划向Anthropic投资至多400亿美元，支持后者大幅扩展算力
+2026-04-25 10:14:30.264 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [lMA1qA027025-0] rid: 69ec2385-5211edca-0c87611b'}
+2026-04-25 10:14:30.266 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [lMA1qA027025-0] rid: 69ec2385-5211edca-0c87611b
+2026-04-25 10:14:30.266 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 10:14:30.266 | INFO     | __main__:main:137 - ✨ 任务完成！请登录公众号后台审核草稿
+2026-04-25 10:14:30.266 | INFO     | __main__:main:138 - ==================================================
+2026-04-25 10:16:10.700 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:16:10.701 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:16:10.701 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:16:10
+2026-04-25 10:16:10.701 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:16:10.701 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:16:10.701 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:16:10.877 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:16:10.877 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:16:12.205 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:16:12.205 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:16:12.697 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:16:12.697 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:16:13.193 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:16:13.193 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:16:13.633 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:16:13.633 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:16:13.633 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:16:13.633 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:16:13.634 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:16:13.634 | INFO     | src.filter:process:45 -    过滤低质量后: 59 篇
+2026-04-25 10:16:13.634 | INFO     | __main__:main:77 -    保留 59 篇优质内容
+2026-04-25 10:16:13.634 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:16:13.635 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 10:16:41.462 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 10:17:04.944 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 10:17:25.034 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: Meta’s loss is Thinking Machin...
+2026-04-25 10:17:41.385 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 谷歌计划向Anthropic投资至多400亿美元，支持后者大...
+2026-04-25 10:18:05.160 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 10:18:05.160 | INFO     | __main__:main:124 - 📤 步骤4: 发布到微信公众号...
+2026-04-25 10:18:05.160 | INFO     | __main__:main:128 -    发布第 1/5 篇: GPT-5.5 Pro来了！OpenAI这次放大招，API接口开放，这波操作稳了！
+
+##
+2026-04-25 10:18:07.010 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [Rtq2Wa048641-3] rid: 69ec245e-1a0d2666-5c9be385'}
+2026-04-25 10:18:07.012 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [Rtq2Wa048641-3] rid: 69ec245e-1a0d2666-5c9be385
+2026-04-25 10:18:07.012 | INFO     | __main__:main:128 -    发布第 2/5 篇: 谷歌豪掷400亿！AI巨头Anthropic成最大赢家，这波操作太刺激了！
+
+##
+2026-04-25 10:18:08.733 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [hVGXKa048838-0] rid: 69ec2460-182a22c5-419a1a6c'}
+2026-04-25 10:18:08.735 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [hVGXKa048838-0] rid: 69ec2460-182a22c5-419a1a6c
+2026-04-25 10:18:08.735 | INFO     | __main__:main:128 -    发布第 3/5 篇: 谷歌砸40亿投资Anthropic，AI大模型战局升级？
+
+##
+2026-04-25 10:18:10.540 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [WozWja049025-1] rid: 69ec2462-67263e05-24b81ffb'}
+2026-04-25 10:18:10.542 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [WozWja049025-1] rid: 69ec2462-67263e05-24b81ffb
+2026-04-25 10:18:10.542 | INFO     | __main__:main:128 -    发布第 4/5 篇: Meta人才流失，Thinking Machines却笑纳了？
+##
+2026-04-25 10:18:12.245 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [38MVCa049225-1] rid: 69ec2464-4502c231-080b7064'}
+2026-04-25 10:18:12.247 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [38MVCa049225-1] rid: 69ec2464-4502c231-080b7064
+2026-04-25 10:18:12.247 | INFO     | __main__:main:128 -    发布第 5/5 篇: 谷歌豪掷400亿！Anthropic的AI梦能做多大？
+##
+2026-04-25 10:18:13.978 | ERROR    | src.publisher:_publish_draft:148 -    ❌ 重试也失败: {'errcode': 40007, 'errmsg': 'invalid media_id hint: [DzmtgA049321-1] rid: 69ec2465-28769b3b-4e3f3bf0'}
+2026-04-25 10:18:13.980 | ERROR    | __main__:main:134 -    ❌ 失败: invalid media_id hint: [DzmtgA049321-1] rid: 69ec2465-28769b3b-4e3f3bf0
+2026-04-25 10:18:13.980 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 10:18:13.980 | INFO     | __main__:main:137 - ✨ 任务完成！请登录公众号后台审核草稿
+2026-04-25 10:18:13.980 | INFO     | __main__:main:138 - ==================================================
+2026-04-25 10:18:13.982 | INFO     | __main__:main:150 - 📁 草稿已保存到 output/ 目录
+2026-04-25 10:22:39.333 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:22:39.334 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:22:39.334 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:22:39
+2026-04-25 10:22:39.334 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:22:39.334 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:22:39.334 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:22:39.601 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:22:39.602 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:22:56.029 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:22:56.029 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:22:56.603 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:22:56.603 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:22:57.065 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:22:57.065 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:22:57.511 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:22:57.511 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:22:57.512 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:22:57.512 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:22:57.512 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:22:57.512 | INFO     | src.filter:process:45 -    过滤低质量后: 59 篇
+2026-04-25 10:22:57.512 | INFO     | __main__:main:77 -    保留 59 篇优质内容
+2026-04-25 10:22:57.512 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:22:57.513 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 10:23:25.721 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 10:23:48.590 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 10:24:09.333 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: Meta’s loss is Thinking Machin...
+2026-04-25 10:24:31.418 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 谷歌计划向Anthropic投资至多400亿美元，支持后者大...
+2026-04-25 10:24:45.622 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 10:24:45.622 | INFO     | __main__:main:142 - ⏭️ 步骤4: 已跳过发布，内容保存在本地待审核
+2026-04-25 10:24:45.622 | INFO     | __main__:main:143 - ==================================================
+2026-04-25 10:24:45.622 | INFO     | __main__:main:144 - ✨ 任务完成！请审核后手动复制到公众号
+2026-04-25 10:24:45.622 | INFO     | __main__:main:145 - ==================================================
+2026-04-25 10:24:45.624 | INFO     | __main__:main:157 - 📁 草稿已保存到 output/ 目录
+2026-04-25 10:26:11.458 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:26:11.458 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:26:11.459 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:26:11
+2026-04-25 10:26:11.459 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:26:11.459 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:26:11.459 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:26:11.742 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:26:11.742 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:26:13.106 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:26:13.106 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:26:13.673 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:26:13.673 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:26:14.152 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:26:14.152 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:26:16.051 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:26:16.052 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:26:16.052 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:26:16.052 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:26:16.052 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:26:16.052 | INFO     | src.filter:process:45 -    过滤低质量后: 59 篇
+2026-04-25 10:26:16.052 | INFO     | __main__:main:77 -    保留 59 篇优质内容
+2026-04-25 10:26:16.052 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:26:16.053 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 10:26:39.236 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 10:27:05.854 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 10:27:29.400 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: Meta’s loss is Thinking Machin...
+2026-04-25 10:27:50.226 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 谷歌计划向Anthropic投资至多400亿美元，支持后者大...
+2026-04-25 10:28:08.534 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 10:28:08.534 | INFO     | __main__:main:142 - ⏭️ 步骤4: 已跳过发布，内容保存在本地待审核
+2026-04-25 10:28:08.534 | INFO     | __main__:main:143 - ==================================================
+2026-04-25 10:28:08.534 | INFO     | __main__:main:144 - ✨ 任务完成！请审核后手动复制到公众号
+2026-04-25 10:28:08.534 | INFO     | __main__:main:145 - ==================================================
+2026-04-25 10:28:08.536 | INFO     | __main__:main:157 - 📁 草稿已保存到 output/ 目录
+2026-04-25 10:28:40.009 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:28:40.009 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:28:40.009 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:28:40
+2026-04-25 10:28:40.009 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:28:40.009 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:28:40.010 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:28:40.192 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:28:40.192 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:28:41.883 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:28:41.883 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:28:42.373 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:28:42.373 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:28:42.903 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:28:42.903 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:28:43.381 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:28:43.381 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:28:43.381 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:28:43.381 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:28:43.381 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:28:43.382 | INFO     | src.filter:process:45 -    过滤低质量后: 59 篇
+2026-04-25 10:28:43.382 | INFO     | __main__:main:77 -    保留 59 篇优质内容
+2026-04-25 10:28:43.382 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:28:43.382 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: OpenAI releases GPT-5.5 and GP...
+2026-04-25 10:29:10.000 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google to invest up to $40B in...
+2026-04-25 10:29:31.571 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Google plans to invest up to $...
+2026-04-25 10:29:49.757 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: Meta’s loss is Thinking Machin...
+2026-04-25 10:30:09.768 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 谷歌计划向Anthropic投资至多400亿美元，支持后者大...
+2026-04-25 10:30:28.764 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 10:30:28.764 | INFO     | __main__:main:142 - ⏭️ 步骤4: 已跳过发布，内容保存在本地待审核
+2026-04-25 10:30:28.764 | INFO     | __main__:main:143 - ==================================================
+2026-04-25 10:30:28.764 | INFO     | __main__:main:144 - ✨ 任务完成！请审核后手动复制到公众号
+2026-04-25 10:30:28.764 | INFO     | __main__:main:145 - ==================================================
+2026-04-25 10:30:28.766 | INFO     | __main__:main:157 - 📁 草稿已保存到 output/ 目录
+2026-04-25 10:33:09.826 | INFO     | __main__:main:57 - ==================================================
+2026-04-25 10:33:09.826 | INFO     | __main__:main:58 - 🚀 科技简报自动生成系统启动
+2026-04-25 10:33:09.826 | INFO     | __main__:main:59 - 📅 运行时间: 2026-04-25 10:33:09
+2026-04-25 10:33:09.826 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 10:33:09.827 | INFO     | __main__:main:64 - 📡 步骤1: 抓取科技资讯...
+2026-04-25 10:33:09.827 | INFO     | src.fetcher:fetch:49 -    正在抓取 techcrunch...
+2026-04-25 10:33:10.017 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ techcrunch: 获取 20 篇文章
+2026-04-25 10:33:10.017 | INFO     | src.fetcher:fetch:49 -    正在抓取 hackernews...
+2026-04-25 10:33:12.743 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ hackernews: 获取 20 篇文章
+2026-04-25 10:33:12.744 | INFO     | src.fetcher:fetch:49 -    正在抓取 theverge...
+2026-04-25 10:33:13.301 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ theverge: 获取 10 篇文章
+2026-04-25 10:33:13.301 | INFO     | src.fetcher:fetch:49 -    正在抓取 36kr...
+2026-04-25 10:33:13.792 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ 36kr: 获取 20 篇文章
+2026-04-25 10:33:13.792 | INFO     | src.fetcher:fetch:49 -    正在抓取 infoq...
+2026-04-25 10:33:14.207 | INFO     | src.fetcher:_fetch_rss:87 -    ✅ infoq: 获取 0 篇文章
+2026-04-25 10:33:14.208 | INFO     | __main__:main:67 -    抓取到 70 篇原始文章
+2026-04-25 10:33:14.208 | INFO     | __main__:main:74 - 🔍 步骤2: 过滤与去重...
+2026-04-25 10:33:14.208 | INFO     | src.filter:process:37 -    原始文章: 70 篇
+2026-04-25 10:33:14.208 | INFO     | src.filter:process:41 -    去重后: 70 篇
+2026-04-25 10:33:14.208 | INFO     | src.filter:process:45 -    过滤低质量后: 59 篇
+2026-04-25 10:33:14.208 | INFO     | __main__:main:77 -    保留 59 篇优质内容
+2026-04-25 10:33:14.208 | INFO     | __main__:main:80 - ✍️ 步骤3: AI生成人工风格内容...
+2026-04-25 10:33:14.209 | INFO     | src.editor:generate:55 -    正在处理第 1 篇: Google to invest up to $40B in...
+2026-04-25 10:33:31.535 | INFO     | src.editor:generate:55 -    正在处理第 2 篇: Google plans to invest up to $...
+2026-04-25 10:33:57.885 | INFO     | src.editor:generate:55 -    正在处理第 3 篇: Meta’s loss is Thinking Machin...
+2026-04-25 10:34:19.154 | INFO     | src.editor:generate:55 -    正在处理第 4 篇: 谷歌计划向Anthropic投资至多400亿美元，支持后者大...
+2026-04-25 10:34:47.163 | INFO     | src.editor:generate:55 -    正在处理第 5 篇: 融了2000万美金，这家2000万美金ARR的AI公司，推出...
+2026-04-25 10:35:03.665 | INFO     | __main__:main:84 -    生成 5 篇待发布内容
+2026-04-25 10:35:03.665 | INFO     | __main__:main:142 - ⏭️ 步骤4: 已跳过发布，内容保存在本地待审核
+2026-04-25 10:35:03.665 | INFO     | __main__:main:143 - ==================================================
+2026-04-25 10:35:03.665 | INFO     | __main__:main:144 - ✨ 任务完成！请审核后手动复制到公众号
+2026-04-25 10:35:03.665 | INFO     | __main__:main:145 - ==================================================
+2026-04-25 10:35:03.667 | INFO     | __main__:main:157 - 📁 草稿已保存到 output/ 目录

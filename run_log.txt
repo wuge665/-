@@ -1,0 +1,78 @@
+﻿D:\python.exe : 2026-04-25 00:00:37.748 | INFO     | __main__:main:57 - ===============================================
+===
+所在位置 行:1 字符: 32
++ ... ion "F:\程序项目\公众号自动流"; D:\python.exe -Xutf8 main.py --run 2>&1 | Out-F ...
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-04-25 00:0...===============:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-04-25 00:00:37.749 | INFO     | __main__:main:58 - 馃殌 绉戞妧绠€鎶ヨ嚜鍔ㄧ敓鎴愮郴缁熷惎鍔?
+2026-04-25 00:00:37.749 | INFO     | __main__:main:59 - 馃搮 杩愯鏃堕棿: 2026-04-25 00:00:37
+2026-04-25 00:00:37.749 | INFO     | __main__:main:60 - ==================================================
+2026-04-25 00:00:37.749 | INFO     | __main__:main:64 - 馃摗 姝ラ1: 鎶撳彇绉戞妧璧勮...
+2026-04-25 00:00:37.749 | INFO     | src.fetcher:fetch:49 -    姝ｅ湪鎶撳彇 techcrunch...
+2026-04-25 00:00:37.954 | INFO     | src.fetcher:_fetch_rss:87 -    鉁?techcrunch: 鑾峰彇 20 绡囨枃绔?
+2026-04-25 00:00:37.954 | INFO     | src.fetcher:fetch:49 -    姝ｅ湪鎶撳彇 hackernews...
+2026-04-25 00:01:11.028 | INFO     | src.fetcher:_fetch_rss:87 -    鉁?hackernews: 鑾峰彇 0 绡囨枃绔?
+2026-04-25 00:01:11.028 | INFO     | src.fetcher:fetch:49 -    姝ｅ湪鎶撳彇 theverge...
+2026-04-25 00:01:11.843 | INFO     | src.fetcher:_fetch_rss:87 -    鉁?theverge: 鑾峰彇 10 绡囨枃绔?
+2026-04-25 00:01:11.843 | INFO     | src.fetcher:fetch:49 -    姝ｅ湪鎶撳彇 36kr...
+2026-04-25 00:01:12.343 | INFO     | src.fetcher:_fetch_rss:87 -    鉁?36kr: 鑾峰彇 20 绡囨枃绔?
+2026-04-25 00:01:12.343 | INFO     | src.fetcher:fetch:49 -    姝ｅ湪鎶撳彇 infoq...
+2026-04-25 00:01:12.739 | INFO     | src.fetcher:_fetch_rss:87 -    鉁?infoq: 鑾峰彇 0 绡囨枃绔?
+2026-04-25 00:01:12.739 | INFO     | __main__:main:67 -    鎶撳彇鍒?50 绡囧師濮嬫枃绔?
+2026-04-25 00:01:12.739 | INFO     | __main__:main:74 - 馃攳 姝ラ2: 杩囨护涓庡幓閲?..
+2026-04-25 00:01:12.739 | INFO     | src.filter:process:37 -    鍘熷鏂囩珷: 50 绡?
+2026-04-25 00:01:12.739 | INFO     | src.filter:process:41 -    鍘婚噸鍚? 50 绡?
+2026-04-25 00:01:12.740 | INFO     | src.filter:process:45 -    杩囨护浣庤川閲忓悗: 45 绡?
+2026-04-25 00:01:12.740 | INFO     | __main__:main:77 -    淇濈暀 45 绡囦紭璐ㄥ唴瀹?
+2026-04-25 00:01:12.740 | INFO     | __main__:main:80 - 鉁嶏笍 姝ラ3: AI鐢熸垚浜哄伐椋庢牸鍐呭...
+2026-04-25 00:01:12.740 | INFO     | src.editor:generate:55 -    姝ｅ湪澶勭悊绗?1 绡? OpenAI releases GPT-5.5, bring...
+2026-04-25 00:01:27.593 | INFO     | src.editor:generate:55 -    姝ｅ湪澶勭悊绗?2 绡? Meta涓庝簹椹€婅揪鎴愭暟鍗佷嚎缇庡厓鍚堜綔锛岄噰鐢ㄥ叾CPU鑺墖鏀拺浜哄
+伐...
+2026-04-25 00:01:44.524 | INFO     | src.editor:generate:55 -    姝ｅ湪澶勭悊绗?3 绡? 鍗氳銆佺粡绾€侀『涓虹瓑鎶曡祫鍓嶆柊鐭冲櫒COO瓒呬嚎鍏冿紝鎶兼敞AI瓒呬究鎼
+虹數...
+2026-04-25 00:01:58.008 | INFO     | src.editor:generate:55 -    姝ｅ湪澶勭悊绗?4 绡? 铻嶄簡2000涓囩編閲戯紝杩欏2000涓囩編閲慉RR鐨凙I鍏徃锛屾帹鍑?..
+2026-04-25 00:02:17.033 | INFO     | src.editor:generate:55 -    姝ｅ湪澶勭悊绗?5 绡? 鏈€鍓嶇嚎锝淎I鏀跺叆鐮翠嚎鍚庣殑璺緞閫夋嫨锛氬井鐩熸帹琛孉I First鎴?.
+.
+2026-04-25 00:02:35.073 | INFO     | __main__:main:84 -    鐢熸垚 5 绡囧緟鍙戝竷鍐呭
+2026-04-25 00:02:35.073 | INFO     | __main__:main:124 - 馃摛 姝ラ4: 鍙戝竷鍒板井淇″叕浼楀彿...
+2026-04-25 00:02:35.073 | INFO     | __main__:main:128 -    鍙戝竷绗?1/5 绡? 馃 GPT-5.5涓婄嚎锛孫penAI鍙堢鈥滆秴绾у簲鐢ㄢ€濇洿杩戜竴姝ワ紒馃帀
+
+##
+2026-04-25 00:02:38.083 | INFO     | src.publisher:_publish_draft:124 -    鉁?鑽夌鍙戝竷鎴愬姛, media_id: 1cnkzSTbIFHKa__gifYGb
+mkSWuT6KTOjG5bO70Tmn1wLmkUH4D3egR_DnRRm-Psc
+2026-04-25 00:02:38.084 | INFO     | __main__:main:132 -    鉁?鎴愬姛 馃 GPT-5.5涓婄嚎锛孫penAI鍙堢鈥滆秴绾у簲鐢ㄢ€濇洿杩戜竴姝ワ紒馃帀
+
+##
+2026-04-25 00:02:38.084 | INFO     | __main__:main:128 -    鍙戝竷绗?2/5 绡? Meta澶у姩浣滐紒鐗垫墜浜氶┈閫婏紝AI鑺墖鍚堜綔浠峰€兼暟鍗佷嚎锛岃繖娉㈡搷浣滃帀瀹充簡
+锛?
+
+##
+2026-04-25 00:02:41.058 | INFO     | src.publisher:_publish_draft:124 -    鉁?鑽夌鍙戝竷鎴愬姛, media_id: 1cnkzSTbIFHKa__gifYGb
+kPtQUakank3j9sWYadIModUfN1d-AViE0He0ooC0bXD
+2026-04-25 00:02:41.059 | INFO     | __main__:main:132 -    鉁?鎴愬姛 Meta澶у姩浣滐紒鐗垫墜浜氶┈閫婏紝AI鑺墖鍚堜綔浠峰€兼暟鍗佷嚎锛岃繖娉㈡搷浣滃帀瀹充簡锛?
+
+##
+2026-04-25 00:02:41.059 | INFO     | __main__:main:128 -    鍙戝竷绗?3/5 绡? 闃呮槦鏇堣瀺璧勮秴浜垮厓锛孉I瓒呬究鎼虹數瀛愮焊瑕佹姠澶烘墜鏈鸿儗闈㈢┖闂达紵
+2026-04-25 00:02:43.931 | INFO     | src.publisher:_publish_draft:124 -    鉁?鑽夌鍙戝竷鎴愬姛, media_id: 1cnkzSTbIFHKa__gifYGb
+kip22noJK-3uCm9zvrBDRuIKkdSIHN-Taq2ynediUsS
+2026-04-25 00:02:43.932 | INFO     | __main__:main:132 -    鉁?鎴愬姛 闃呮槦鏇堣瀺璧勮秴浜垮厓锛孉I瓒呬究鎼虹數瀛愮焊瑕佹姠澶烘墜鏈鸿儗闈㈢┖闂达紵
+2026-04-25 00:02:43.933 | INFO     | __main__:main:128 -    鍙戝竷绗?4/5 绡? 馃殌 2000涓囩編閲戣瀺杩汚I鍙ｈ锛岃繖瀹跺叕鍙告帹鍑衡€滆棰戠増Photoshop鈥濄
+€孊uzzy銆嶐煄?
+2026-04-25 00:02:47.118 | INFO     | src.publisher:_publish_draft:124 -    鉁?鑽夌鍙戝竷鎴愬姛, media_id: 1cnkzSTbIFHKa__gifYGb
+jNJ_H6tfcDo-0QYhnZ6l8_qT7cjIdsN6xFJQ-r8QxR3
+2026-04-25 00:02:47.119 | INFO     | __main__:main:132 -    鉁?鎴愬姛 馃殌 2000涓囩編閲戣瀺杩汚I鍙ｈ锛岃繖瀹跺叕鍙告帹鍑衡€滆棰戠増Photoshop鈥濄€孊uzzy
+銆嶐煄?
+2026-04-25 00:02:47.119 | INFO     | __main__:main:128 -    鍙戝竷绗?5/5 绡? 鏈€鍓嶇嚎锝淎I鏀跺叆鐮翠嚎鍚庯紝寰洘鐜╄捣鈥淎I First鈥濇垬鐣ワ紝B绔氦浠樿兘鐜╄
+浆鍚楋紵
+
+##
+2026-04-25 00:02:49.944 | INFO     | src.publisher:_publish_draft:124 -    鉁?鑽夌鍙戝竷鎴愬姛, media_id: 1cnkzSTbIFHKa__gifYGb
+lGJkcxiEx6bNKzQBRNSCsDdFZqwigflgR-BQt6o7LQh
+2026-04-25 00:02:49.945 | INFO     | __main__:main:132 -    鉁?鎴愬姛 鏈€鍓嶇嚎锝淎I鏀跺叆鐮翠嚎鍚庯紝寰洘鐜╄捣鈥淎I First鈥濇垬鐣ワ紝B绔氦浠樿兘鐜╄浆鍚楋紵
+
+##
+2026-04-25 00:02:49.945 | INFO     | __main__:main:136 - ==================================================
+2026-04-25 00:02:49.945 | INFO     | __main__:main:137 - 鉁?浠诲姟瀹屾垚锛佽鐧诲綍鍏紬鍙峰悗鍙板鏍歌崏绋?
+2026-04-25 00:02:49.945 | INFO     | __main__:main:138 - ==================================================
