@@ -50,7 +50,7 @@
     "min_title_length": 15,
     "max_title_length": 80,
     "max_articles_per_source": 10,
-    "output_count": 5
+    "output_count": 10
   },
   "style": {
     "persona": "科技媒体编辑",

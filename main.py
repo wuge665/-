@@ -152,6 +152,8 @@ def main():
                 f.write(f"# {post['title']}\n\n")
                 f.write(post['content'])
                 f.write(f"\n\n标签: {post.get('tags', '')}")
+                if post.get('image_suggestion'):
+                    f.write(f"\n配图建议: {post['image_suggestion']}")
                 f.write(f"\n\n来源: {post.get('source_name', '')}")
                 f.write(f"\n链接: {post.get('source_url', '')}")
         logger.info(f"📁 草稿已保存到 output/ 目录")

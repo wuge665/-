@@ -84,7 +84,8 @@ class AIEditor:
 请严格按照格式输出：
 【标题】
 【正文】
-【标签】"""
+【标签】
+【配图建议】"""
         
         # 根据 AI_PROVIDER 配置选择
         provider = os.getenv("AI_PROVIDER", "zhipu").lower()
