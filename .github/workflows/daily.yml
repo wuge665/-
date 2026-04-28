@@ -1,11 +1,9 @@
-# 科技简报自动生成系统
-
 name: Daily Tech Brief
 
-on:
+于:
   schedule:
-    - cron: "22 1 * * *"  # UTC 1:22 AM = 北京时间 9:22 AM
-  workflow_dispatch:  # 允许手动触发
+    - cron: "0 22 * * *"
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -15,36 +13,33 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
       
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
       
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
       
       - name: Run publisher
         env:
           ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
-          WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
-          WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
-          AUTO_PUBLISH: false
+        run: python main.py
+      
+      - name: Commit and Push
         run: |
-          python main.py --run
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/
+          git diff --cached --quiet || git commit -m "Auto: Update drafts"
+          git push
       
       - name: Upload drafts
         uses: actions/upload-artifact@v4
         with:
           name: drafts
           path: output/draft_*.md
-          retention-days: 7
-      
-      - name: Upload logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: logs
-          path: logs/
-          retention-days: 7
