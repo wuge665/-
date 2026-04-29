@@ -17,6 +17,13 @@ class ContentFilter:
         "ChatGPT", "Gemini", "Claude", "Sora",
         "自动驾驶", "机器人", "量子计算",
         "OpenAI", "Google", "Anthropic", "Meta",
+        "工具", "教程", "测评", "评测", "指南", "使用",
+        "硬件", "芯片", "GPU", "CPU", "设备", "产品",
+        "开源", "新功能", "更新", "版本", "配置", "安装",
+        "AI tool", "tutorial", "guide", "review", "setup", "install",
+        "hardware", "chip", "GPU", "device", "innovation",
+        "how to", "use", "beginner", "getting started",
+        "测评", "教程", "工具", "硬件", "创新", "发布",
     ]
     
     # 低质量关键词（需过滤）
@@ -111,7 +118,7 @@ class ContentFilter:
                     score += 10
             
             # 来源权重
-            high_quality_sources = ["techcrunch", "hackernews", "theverge", "36kr"]
+            high_quality_sources = ["techcrunch", "theverge", "wired", "medium_aitools", "medium_tutorials", "medium_ai", "hackernews", "36kr"]
             if article.get("source") in high_quality_sources:
                 score += 5
             

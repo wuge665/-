@@ -1,28 +1,70 @@
 {
   "name": "科技简报",
-  "version": "1.0",
+  "version": "2.0",
   "description": "科技前沿资讯自动发布系统",
   "sources": {
-    "hackernoon": {
-      "name": "HackerNoon",
+    "techcrunch": {
+      "name": "TechCrunch",
       "type": "rss",
-      "url": "https://hackernoon.com/feed",
+      "url": "https://techcrunch.com/feed/",
       "enabled": true,
-      "priority": 1
+      "priority": 1,
+      "category": ["AI", "硬件", "创业"],
+      "translate": true
+    },
+    "theverge": {
+      "name": "The Verge",
+      "type": "rss",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "enabled": true,
+      "priority": 2,
+      "category": ["AI", "硬件", "科技产品"],
+      "translate": true
     },
     "wired": {
       "name": "Wired",
       "type": "rss",
       "url": "https://www.wired.com/feed/rss",
       "enabled": true,
-      "priority": 2
+      "priority": 3,
+      "category": ["AI", "硬件", "科技文化"],
+      "translate": true
     },
-    "mit_tech": {
-      "name": "MIT Tech",
+    "medium": {
+      "name": "Medium",
       "type": "rss",
-      "url": "https://www.technologyreview.com/feed/",
+      "url": "https://medium.com/feed/@ai-tools-review",
       "enabled": true,
-      "priority": 3
+      "priority": 4,
+      "category": ["AI工具", "教程", "使用指南"],
+      "translate": true
+    },
+    "medium_machinelearning": {
+      "name": "Medium-ML",
+      "type": "rss",
+      "url": "https://medium.com/feed/@MachineLearning2019",
+      "enabled": true,
+      "priority": 5,
+      "category": ["AI工具", "机器学习", "教程"],
+      "translate": true
+    },
+    "medium_venture": {
+      "name": "Medium-Venture",
+      "type": "rss",
+      "url": "https://medium.com/feed/@ VentureCapital",
+      "enabled": true,
+      "priority": 6,
+      "category": ["AI创业", "硬件创新"],
+      "translate": true
+    },
+    "36kr": {
+      "name": "36氪",
+      "type": "rss",
+      "url": "https://36kr.com/feed",
+      "enabled": true,
+      "priority": 10,
+      "category": ["国内科技", "创业"],
+      "translate": false
     }
   },
   "filters": {
@@ -45,12 +87,24 @@
       "自动驾驶", "机器人", "量子计算", "AI Agent",
       "OpenAI", "Google", "Anthropic", "Meta", "xAI",
       "DeepSeek", "Kimi", "Llama", "Qwen", "Mistral",
-      "o1", "推理", "多模态", "AI编程", "Cursor", "Claude Code"
+      "o1", "推理", "多模态", "AI编程", "Cursor", "Claude Code",
+      "工具", "教程", "使用", "指南", "测评", "评测",
+      "硬件", "芯片", "GPU", "CPU", "设备", "产品发布",
+      "开源", "新功能", "更新", "版本", "配置", "安装"
+    ],
+    "include_keywords": [
+      "AI tool", "tutorial", "guide", "review", "setup", "install",
+      "hardware", "chip", "GPU", "device", "innovation",
+      "how to", "use", "beginner", "getting started",
+      "测评", "教程", "工具", "硬件", "创新"
     ],
     "min_title_length": 15,
     "max_title_length": 80,
-    "max_articles_per_source": 10,
-    "output_count": 10
+    "max_articles_per_source": 15,
+    "output_count": 20,
+    "prefer_with_images": true,
+    "prefer_ai_tools": true,
+    "prefer_hardware": true
   },
   "style": {
     "persona": "科技媒体编辑",

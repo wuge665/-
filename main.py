@@ -42,7 +42,7 @@ def parse_args():
     parser.add_argument("--test", action="store_true", help="测试模式")
     parser.add_argument("--run", action="store_true", help="正式运行")
     parser.add_argument("--sources", nargs="+", default=None, help="指定资讯源")
-    parser.add_argument("--count", type=int, default=5, help="生成文章数量")
+    parser.add_argument("--count", type=int, default=int(os.getenv("ARTICLES_COUNT", "20")), help="生成文章数量")
     parser.add_argument("--retry", type=int, metavar="N", help="重新生成第N篇文章")
     parser.add_argument("--feedback", type=str, help="修改意见（配合--retry使用）")
     parser.add_argument("--save", action="store_true", help="保存生成内容到本地")
@@ -50,9 +50,21 @@ def parse_args():
     return parser.parse_args()
 
 
+def get_sources_from_env() -> list:
+    """从环境变量获取资讯源列表"""
+    sources_str = os.getenv("NEWS_SOURCES", "")
+    if sources_str:
+        return [s.strip() for s in sources_str.split(",") if s.strip()]
+    return None
+
+
 def main():
     setup_logger()
     args = parse_args()
+    
+    # 如果没有命令行指定 sources，从环境变量读取
+    if args.sources is None:
+        args.sources = get_sources_from_env()
     
     logger.info("=" * 50)
     logger.info("🚀 科技简报自动生成系统启动")
@@ -83,17 +95,20 @@ def main():
         posts = editor.generate(filtered[:articles_to_post])
         logger.info(f"   生成 {len(posts)} 篇待发布内容")
         
-        # 4. 保存或重写
+        # 4. 保存到本地（默认行为）
+        output_dir = Path("output")
+        output_dir.mkdir(exist_ok=True)
+        for i, post in enumerate(posts, 1):
+            with open(output_dir / f"draft_{i}.md", "w", encoding="utf-8") as f:
+                f.write(f"# {post['title']}\n\n")
+                f.write(post['content'])
+                f.write(f"\n\n标签: {post.get('tags', '')}")
+                f.write(f"\n\n来源: {post.get('source', '')}")
+                f.write(f"\n链接: {post.get('url', '')}")
+        logger.info(f"📁 内容已保存到 output/draft_*.md")
+        
         if args.save:
-            # 保存到本地
-            output_dir = Path("output")
-            output_dir.mkdir(exist_ok=True)
-            for i, post in enumerate(posts, 1):
-                with open(output_dir / f"article_{i}.md", "w", encoding="utf-8") as f:
-                    f.write(f"# {post['title']}\n\n")
-                    f.write(post['content'])
-                    f.write(f"\n\n标签: {post.get('tags', '')}")
-            logger.info(f"📁 内容已保存到 output/ 目录")
+            logger.info("📁 内容已保存（额外保存模式）")
             return
         
         if args.retry and args.feedback:

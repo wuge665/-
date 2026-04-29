@@ -4,8 +4,10 @@
 """
 import feedparser
 import requests
+import json
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
+from pathlib import Path
 from loguru import logger
 from typing import List, Dict
 
@@ -13,14 +15,46 @@ from typing import List, Dict
 class NewsFetcher:
     """资讯抓取器"""
     
-    # RSS订阅源配置
-    RSS_SOURCES = {
-        "techcrunch": "https://techcrunch.com/feed/",
-        "hackernews": "https://hnrss.org/frontpage",
-        "theverge": "https://www.theverge.com/rss/index.xml",
-        "36kr": "https://36kr.com/feed",
-        "infoq": "https://feed.infoq.com/",
-    }
+    def __init__(self):
+        # 从 sources.json 加载配置
+        self.sources_config = self._load_sources_config()
+        self.RSS_SOURCES = self._build_rss_sources()
+        
+        # 如果配置文件加载失败，使用默认配置
+        if not self.RSS_SOURCES:
+            self.RSS_SOURCES = {
+                "techcrunch": "https://techcrunch.com/feed/",
+                "theverge": "https://www.theverge.com/rss/index.xml",
+                "wired": "https://www.wired.com/feed/rss",
+                "hackernews": "https://hnrss.org/frontpage",
+                "36kr": "https://36kr.com/feed",
+                "infoq": "https://feed.infoq.com/",
+                "medium_aitools": "https://medium.com/feed/tag/artificial-intelligence-tools/",
+                "medium_tutorials": "https://medium.com/feed/tag/tutorial/",
+                "medium_ai": "https://medium.com/feed/tag/machine-learning/",
+            }
+        
+        # 初始化请求会话
+        self.session = requests.Session()
+        self.session.headers.update({
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        })
+    
+    def _load_sources_config(self) -> dict:
+        """加载 sources.json 配置"""
+        config_file = Path(__file__).parent.parent / "config" / "sources.json"
+        if config_file.exists():
+            with open(config_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return {"sources": {}}
+    
+    def _build_rss_sources(self) -> dict:
+        """从配置构建 RSS 源列表"""
+        sources = {}
+        for key, config in self.sources_config.get("sources", {}).items():
+            if config.get("enabled", True) and config.get("type") == "rss":
+                sources[key] = config["url"]
+        return sources
     
     # 需要排除的域名（公众号来源）
     EXCLUDE_DOMAINS = [
@@ -28,12 +62,6 @@ class NewsFetcher:
         "weixin.qq.com",
         "weixindubai.com",
     ]
-    
-    def __init__(self):
-        self.session = requests.Session()
-        self.session.headers.update({
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-        })
     
     def fetch(self, sources: List[str] = None) -> List[Dict]:
         """抓取所有配置的资讯源"""

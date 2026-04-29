@@ -1,0 +1,46 @@
+name: X Platform Daily
+
+on:
+  schedule:
+    - cron: "0 1 * * *"  # UTC 1:00 AM = 北京时间 9:00 AM
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run X platform generator
+        env:
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: |
+          python x_main.py
+
+      - name: Upload X content
+        uses: actions/upload-artifact@v4
+        with:
+          name: x-content
+          path: x平台内容/draft_*.md
+          retention-days: 7
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: x-logs
+          path: logs/x_brief_*.log
+          retention-days: 7
