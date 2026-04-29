@@ -35,7 +35,7 @@ def setup_logger():
 def parse_args():
     """解析命令行参数"""
     parser = argparse.ArgumentParser(description="X平台内容生成系统")
-    parser.add_argument("--count", type=int, default=5, help="生成内容数量")
+    parser.add_argument("--count", type=int, default=10, help="生成内容数量")
     parser.add_argument("--sources", nargs="+", default=None, help="指定资讯源")
     return parser.parse_args()
 
