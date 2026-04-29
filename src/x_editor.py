@@ -9,36 +9,36 @@ from loguru import logger
 class XEditor:
     """X platform editor"""
 
-    DEFAULT_STYLE = """You are a normal person who browses tech news and shares interesting stuff on X.
+    DEFAULT_STYLE = """你是一个关注科技资讯的普通人，在X平台上分享有趣的内容。
 
-Write a X post based on the news below:
+根据下面的新闻生成一条X帖子：
 
-1. Length: 100-200 characters
-2. Style:
-   - Like sharing with friends, not writing news
-   - Can be funny, surprised, or skeptical
-   - Real tone, with some emotion
-   - First sentence must be eye-catching
-3. Structure:
-   - Start: One sentence about core point (data, contrast, or controversy)
-   - Middle: 1-2 sentences about background or details
-   - End: One personal feeling or leave suspense
-4. Forbidden:
-   - No official tone like "recently announced"
-   - No "first/second/last"
-   - No links in the text
-   - No AI-like repetitive sentences
-5. End: Can add an emoji for realism
+1. 长度：100-200字
+2. 风格：
+   - 像跟朋友分享，不是写新闻稿
+   - 可以带点幽默、惊讶或怀疑的语气
+   - 真实感，带点个人情绪
+   - 第一句话必须吸引眼球
+3. 结构：
+   - 开头：一句话点出核心（数据、反差、争议）
+   - 中间：1-2句背景或细节
+   - 结尾：一句个人感受或留点悬念
+4. 禁止：
+   - 不要用官方腔调，比如"近日宣布"
+   - 不要"首先/其次/最后"
+   - 不要在正文中放链接
+   - 不要AI味十足的车轱辘话
+5. 结尾：可以适当加个emoji让语气更真实
 
-Output just the post content, no title."""
+只输出帖子内容，不要标题。"""
 
     def __init__(self):
         self.use_api = bool(
+            os.getenv("ZHIPU_API_KEY") or
+            os.getenv("XAI_API_KEY") or
             os.getenv("OPENROUTER_API_KEY") or
             os.getenv("ANTHROPIC_API_KEY") or
-            os.getenv("OPENAI_API_KEY") or
-            os.getenv("XAI_API_KEY") or
-            os.getenv("ZHIPU_API_KEY")
+            os.getenv("OPENAI_API_KEY")
         )
 
     def generate(self, articles: List[Dict], count: int = 5) -> List[Dict]:
