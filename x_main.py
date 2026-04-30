@@ -82,7 +82,10 @@ def main():
 
     # 4. 保存到本地
     logger.info("💾 步骤4: 保存到本地...")
-    x_content_dir = Path("x平台内容")
+    if os.getenv("GITHUB_ACTIONS"):
+        x_content_dir = Path("x平台内容")
+    else:
+        x_content_dir = Path.home() / "Desktop" / "X平台草稿"
     x_content_dir.mkdir(exist_ok=True)
 
     for i, post in enumerate(posts, 1):

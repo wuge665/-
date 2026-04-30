@@ -96,7 +96,10 @@ def main():
         logger.info(f"   生成 {len(posts)} 篇待发布内容")
         
         # 4. 保存到本地（默认行为）
-        output_dir = Path("output")
+        if os.getenv("GITHUB_ACTIONS"):
+            output_dir = Path("output")
+        else:
+            output_dir = Path.home() / "Desktop" / "公众号草稿"
         output_dir.mkdir(exist_ok=True)
         for i, post in enumerate(posts, 1):
             with open(output_dir / f"draft_{i}.md", "w", encoding="utf-8") as f:
@@ -105,7 +108,7 @@ def main():
                 f.write(f"\n\n标签: {post.get('tags', '')}")
                 f.write(f"\n\n来源: {post.get('source', '')}")
                 f.write(f"\n链接: {post.get('url', '')}")
-        logger.info(f"📁 内容已保存到 output/draft_*.md")
+        logger.info(f"📁 内容已保存到 {output_dir}/draft_*.md")
         
         if args.save:
             logger.info("📁 内容已保存（额外保存模式）")
@@ -160,7 +163,10 @@ def main():
             logger.info("=" * 50)
         
         # 无论发布成功与否都保存到本地
-        output_dir = Path("output")
+        if os.getenv("GITHUB_ACTIONS"):
+            output_dir = Path("output")
+        else:
+            output_dir = Path.home() / "Desktop" / "公众号草稿"
         output_dir.mkdir(exist_ok=True)
         for i, post in enumerate(posts, 1):
             with open(output_dir / f"draft_{i}.md", "w", encoding="utf-8") as f:
@@ -171,7 +177,7 @@ def main():
                     f.write(f"\n配图建议: {post['image_suggestion']}")
                 f.write(f"\n\n来源: {post.get('source_name', '')}")
                 f.write(f"\n链接: {post.get('source_url', '')}")
-        logger.info(f"📁 草稿已保存到 output/ 目录")
+        logger.info(f"📁 草稿已保存到 {output_dir}/ 目录")
         
         if args.test:
             # 测试模式保存到本地
