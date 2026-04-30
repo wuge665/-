@@ -44,3 +44,13 @@ jobs:
           name: x-logs
           path: logs/x_brief_*.log
           retention-days: 7
+      
+      - name: Commit and push X content
+        env:
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add x平台内容/ logs/
+          git commit -m "Auto-generate X content $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push
