@@ -33,6 +33,14 @@ class XEditor:
 只输出帖子内容，不要标题。"""
 
     def __init__(self):
+        # 尝试加载AGENTS.md
+        agents_file = os.path.join(os.path.dirname(__file__), "..", "AGENTS.md")
+        if os.path.exists(agents_file):
+            with open(agents_file, "r", encoding="utf-8") as f:
+                self.style_prompt = f.read()
+        else:
+            self.style_prompt = self.DEFAULT_STYLE
+        
         self.use_api = bool(
             os.getenv("ZHIPU_API_KEY") or
             os.getenv("XAI_API_KEY") or
